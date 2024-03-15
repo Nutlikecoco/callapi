@@ -109,33 +109,41 @@ class _TimeTableState extends State<TimeTable> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        SizedBox(height: 15,),
+                        SizedBox(height: 15),
                         Row(
                           children: [
                             Icon(Icons.badge, color: Colors.grey.shade800),
                             SizedBox(width: 5),
-                            Text('Name: ${character.name ?? ''}'),
+                            Flexible(
+                              child: Text('Name: ${character.name ?? ''}'),
+                            ),
                           ],
                         ),
                         Row(
                           children: [
                             Icon(Icons.man_4, color: Colors.grey.shade800),
                             SizedBox(width: 5),
-                            Text('Type: ${character.type ?? ''}'),
+                            Flexible(
+                              child: Text('Type: ${character.type ?? ''}'),
+                            ),
                           ],
                         ),
                         Row(
                           children: [
                             Icon(genderIcon, color: Colors.grey.shade800),
                             SizedBox(width: 5),
-                            Text('Gender: ${character.gender ?? ''}'),
+                            Flexible(
+                              child: Text('Gender: ${character.gender ?? ''}'),
+                            ),
                           ],
                         ),
                         Row(
                           children: [
                             Icon(Icons.public, color: Colors.grey.shade800),
                             SizedBox(width: 5),
-                            Text('Origin: ${character.origin ?? ''}'),
+                            Flexible(
+                              child: Text('Origin: ${character.origin ?? ''}'),
+                            ),
                           ],
                         ),
                       ],
